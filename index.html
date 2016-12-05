@@ -68,18 +68,10 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Imię i nazwisko:</h2>
-          <form action="#" id="add-user" class="form">
-            <input type="text" name="user" placeholder="Imię i Nazwisko">
-            <button type="submit">Dodaj</button>
-          </form>
+        <div class="col-md-12 list-container">
+          <h1 class="heading">Baza danych o użytkownikach:</h1>
+          <button id="button-get" type="submit">Pobierz dane</button>
         </div>
-        <div class="col-md-8">
-          <h2>Lista gości:</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
       </div>
 
       <hr>
@@ -89,6 +81,12 @@
       </footer>
     </div> <!-- /container -->
 
+    <script id="user-template" type="text/x-template">
+      <p>Imię: {{ name }} </p>
+      <p>Login: {{ username }} </p>
+      <p>E-mail: {{ email }} </p>
+      <p>Telefon: {{ phone }} </p>
+    </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
