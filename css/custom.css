@@ -1,0 +1,33 @@
+.highlighted {
+	background-color: yellow;
+	border: 1px dashed orange;
+}
+
+.hamburger {
+	background: #F1F1F1;
+	width: 300px;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: -300px;
+	padding-top: 60px;
+	height: 100%;
+	overflow: scroll;
+	border-right: 1px solid #e5e5e5;
+}
+
+.hamburger-list {
+	list-style-type: none;
+}
+
+.hamburger-item {
+	padding: 20px 0;
+}
+
+.hamburger-link {
+	display: block;
+}
+
+.invalid {
+	border: 2px solid red;
+}
